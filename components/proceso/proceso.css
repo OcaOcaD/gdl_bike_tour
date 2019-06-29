@@ -1,0 +1,31 @@
+.proceso{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+    background-color: #1d1d1b;
+    align-items: center;
+    padding-top: 1.5em; 
+    padding-bottom: 1.5em; 
+}
+.proceso__title{
+    color: #a42035;
+    
+}
+.proceso__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+    .proceso__info p{
+        text-align: center;
+        font-size: 110%;
+        color: white;
+        margin-bottom: 0;
+    }
+    .proceso__info a{
+        color: #a42035;
+        text-decoration: none;
+    }

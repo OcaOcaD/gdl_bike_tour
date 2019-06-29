@@ -12,19 +12,30 @@
     <link rel="stylesheet" href="components/bienvenido/bienvenido.css">
     <link rel="stylesheet" href="components/selectLanguage/selectLanguage.css">
     <link rel="stylesheet" href="components/tours/tours.css">
+    <link rel="stylesheet" href="components/us/us.css">
+    <link rel="stylesheet" href="components/proceso/proceso.css">
+    <link rel="stylesheet" href="components/contact/contact.css">
 
     <link rel="stylesheet" href="components/footer/footer.css">
-    <title>Bike</title>
+    <title>GDL BIKE TOUR</title>
 </head>
 <body>
     <?php
-        include("components/navbar/navbar.php");
-        include("components/video/video.html");
-        include("components/bienvenido/bienvenido.html");
-        include("components/selectLanguage/selectLanguage.php");
-        include("components/tours/tours.php");
+    include("components/navbar/navbar.php");
+    include("components/video/video.html");
+    include("components/bienvenido/bienvenido.html");
+    include("components/selectLanguage/selectLanguage.php");
+    include("components/tours/tours.php");
+    include("components/us/us.html");
+    include("components/proceso/proceso.html");
+    include("components/contact/contact.php");
 
-        include("components/footer/footer.html");
+    include("components/footer/footer.html");
+
+    
     ?>
+    <!--Adding some javascript for components here-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
