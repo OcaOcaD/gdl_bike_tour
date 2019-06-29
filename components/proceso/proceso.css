@@ -1,5 +1,6 @@
 .proceso{
     display: flex;
+    position: relative;
     width: 100vw;
     height: auto;
     flex-direction: column;
@@ -21,9 +22,10 @@
 }
     .proceso__info p{
         text-align: center;
+        margin: 0;
+        line-height: 1.5em;
         font-size: 110%;
         color: white;
-        margin-bottom: 0;
     }
     .proceso__info a{
         color: #a42035;

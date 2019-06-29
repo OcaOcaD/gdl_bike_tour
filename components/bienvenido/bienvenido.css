@@ -1,5 +1,6 @@
 .bienvenido{
-    height: 65vh;
+    /*height: 55vh;*/
+    height: auto;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -23,8 +24,10 @@
         width: 70%;
     }
         .bien__text p{
-            font-size: 150%;
+            margin-top: 0;
+            font-size: 115%;
             color: white;
+            text-align: justified;
         }
     .bien__text button{
         background-color: #1d1d1d;
@@ -32,7 +35,7 @@
         color: #a42035;
         width: 240px;
         height: 40px;
-        margin-top: 2em;
+        margin: 0.5em;
         line-height: 30px;
         display: flex;
         justify-content: center;

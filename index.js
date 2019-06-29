@@ -1,4 +1,28 @@
+function redirect(reservation) {
+    switch (reservation) {
+    case "history_tour":{
+        location.replace("http://www.gdlbiketours.mx/calendario/es/index_hi.php");
+        break;
+    }
+    case "food_tour":{
+        location.replace("http://www.gdlbiketours.mx/calendario/es/index_food.php");
+        break;
+    }
+    case "extreme_tour":{
+        location.replace("http://www.gdlbiketours.mx/calendario/es/index_food.php");
+        break;
+    }
+    case "gallery":{
+        location.replace("tourGallery.php");
+        break;
+    }
+    default:
+        location.replace("http://www.gdlbiketours.mx/tipoReservacion.html");
+        break;
+    }
+}
 !(function(d){
+    
     function changeNavBG(type){
         nb = d.getElementsByClassName("shadow");
         switch( type ){

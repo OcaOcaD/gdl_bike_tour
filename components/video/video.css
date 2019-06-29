@@ -1,7 +1,7 @@
 .video{
     position: relative;
+    height: 100vh;
     width: 100vw;
-    height: auto;
     display: flex;
     justify-content: center;
     margin: 0;
@@ -11,8 +11,8 @@
     .video video{
         margin: 0;
         padding: 0;
-        width: 100vw;
-        height: auto;
+        object-fit: fill;
+        min-width: 100%;        
         text-indent: 0;
     }
     .video__info{
@@ -29,7 +29,7 @@
         .video__info h3,
         .video__info button{
             text-align: center;
-            color: black;
+            color: white;
         }
         .video__info h1{
             font-size: 300%;
@@ -41,7 +41,7 @@
             margin: 0;
         }
         .video__info button{
-            border: 3px solid black;
+            border: 3px solid white;
             height: 50px;
             width: 240px;
             background-color: transparent;
@@ -52,6 +52,6 @@
             outline: none;
         }
         .video__info button:hover{
-            color: white;
-            background-color: black;
+            color: black;
+            background-color: white;
         }

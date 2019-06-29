@@ -1,0 +1,12 @@
+html, body{
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    background-color: #1D1D1B;
+}
+label, p, h1, h2, h3, ul, li, legend, small, strong{
+    font-family: 'Lato', sans-serif;
+}

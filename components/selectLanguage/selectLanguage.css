@@ -11,6 +11,7 @@
 }
     .selectLanguage h1{
         color: #a42035;
+        margin-bottom: 0;
     }
     .cards__container{
         width: 70%;

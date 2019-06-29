@@ -60,4 +60,10 @@
             font-weight: 800;
             cursor: pointer;
             outline: none;
+            transition: color 0.3s ease-out, font-weight 0.2s ease;
+            text-shadow: 1px black;
+        }
+        .navbar__item:hover{
+            color: #A42035;
+            font-weight: 1000;
         }
