@@ -24,7 +24,7 @@
     include("components/navbar/navbar.php");
     include("components/video/video.html");
     include("components/bienvenido/bienvenido.html");
-    include("components/selectLanguage/selectLanguage.php");
+    
     include("components/tours/tours.php");
     include("components/us/us.html");
     include("components/proceso/proceso.html");

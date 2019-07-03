@@ -30,7 +30,7 @@ function redirect(reservation) {
                 $(nb).css({
                     transition : 'background\-image 3s ease-out',
                     "background-image" : "linear-gradient(to top, transparent, #1D1D1B,#1D1D1B,#1D1D1B)",
-                    "opacity" : "0.5",
+                    "opacity" : "0.7",
                     "height" : "115px"
                 });
                 break;

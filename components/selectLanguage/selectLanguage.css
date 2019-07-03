@@ -1,6 +1,7 @@
 .selectLanguage{
-    height: 40vh;
-    width: 100vw;
+    order:3;
+    height: 100px;
+    width: 300px;
     padding: 0;
     margin: 0;
     display: flex;
@@ -8,16 +9,13 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: #1D1D1B;
+    background-color: transparent;
 }
-    .selectLanguage h1{
-        color: #a42035;
-        margin-bottom: 0;
-    }
+
     .cards__container{
         width: 70%;
-        height: 80%;
+        height: 100%;
         padding: 0;
-        margin: 2em;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -25,13 +23,12 @@
         .card{
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             height: 100%;
             max-height: 100%;
             width: 240px;
             /*background-color: #9D9D9C;*/
-            border: 2px solid #1D1D1B;
             transition: border .1s ease-in;
             transition: background-color .4s ease-out;
             cursor: pointer;
@@ -40,10 +37,8 @@
             background-color:white;
         }
         .card__flag{
-            padding-top: 1.5em;
-            height: 60%;
-            width: auto;
-            max-width: 90%;
+            height: 50px;
+            width: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -54,10 +49,17 @@
             }
         .card__description{
             color: white;
+            text-shadow: black 2px 2px;
             transition: color .4s ease-out;
             margin: 0;
             padding: 0;
         }
+            .card_description p{
+                color: white;
+                font-size: 90%;
+                text-shadow: black 2px 2px;
+            }
         .card__description:hover{
             color: #a42035;
+
         }

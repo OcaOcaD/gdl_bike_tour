@@ -11,7 +11,9 @@
             <li class="navbar__item">RESERVACIONES</li>
             <li class="navbar__item">CONTACTO</li>
         </ul>
-
+        <?php
+        include("components/selectLanguage/selectLanguage.php");
+        ?>
     </nav>
 
 </div>
