@@ -1,11 +1,12 @@
 .footer{
-    position: relative;
+    position: fixed;
     display: flex;
     bottom: 0;
     height: 40px;
     width: 100%;
     justify-content: space-between;
     background-color: #9D9D9C;
+    z-index: 100;
 }
 .footer__texto{
     order:1;

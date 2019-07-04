@@ -25,7 +25,8 @@
     bottom: 0;
     width: 100%;
     height: auto;
-    padding-bottom: 2em; 
+    min-height: 50%;
+    padding-bottom: 4em; 
     background-color: inherit;
     z-index: 10;
 }

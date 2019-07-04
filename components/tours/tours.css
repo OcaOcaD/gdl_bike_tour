@@ -93,8 +93,19 @@
                     transition: opacity 0.4s ease-out;  
                     z-index: 100;
                 }
-                .tours_tour__img__button{
+                .tours__buttons{
                     position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    width: 100%;
+                }
+                .tours_tour__img__button{
+                    position: relative;
+                    margin-top: 0.5em;
+                    margin-bottom: 0.5em;
                     border: 2px solid white;
                     height: 50px;
                     width: 60%;

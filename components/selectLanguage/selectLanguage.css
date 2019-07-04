@@ -48,13 +48,12 @@
                 max-height:100%;
             }
         .card__description{
-            color: white;
-            text-shadow: black 2px 2px;
             transition: color .4s ease-out;
+            color: white;
             margin: 0;
             padding: 0;
         }
-            .card_description p{
+            .card__description p{
                 color: white;
                 font-size: 90%;
                 text-shadow: black 2px 2px;

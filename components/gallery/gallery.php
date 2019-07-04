@@ -58,7 +58,7 @@
                 for ( $j = 0; $j <= 3; $j++ ){ ?>
                 <div class="tours__tour" >
                     <div class="tours__tour__img">
-                        <button class="tours_tour__img__button" >RESERVAR AHORA</button>
+                        <button class="tours_tour__img__button" >AGENDA UN TOUR</button>
                         <img src="img/tours/<?php echo strtolower($tour[$k]["image"])?>" alt="Tour image">
                         <div class="tours__tour__img__shadow"></div>
                     </div>

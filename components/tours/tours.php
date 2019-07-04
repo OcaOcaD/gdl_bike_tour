@@ -6,7 +6,10 @@
         <div class="tours__tours">
             <div class="tours__tour" onclick="redirect('meanwhile')" >
                 <div class="tours__tour__img">
-                    <button class="tours_tour__img__button" >RESERVAR AHORA</button>
+                    <div class="tours__buttons">
+                        <button class="tours_tour__img__button" >AGENDA UN TOUR</button>
+                        <button class="tours_tour__img__button" >VER MÁS</button>
+                    </div>
                     <img src="img/tours/foodtour.jpg" alt="Tour image">
                     <div class="tours__tour__img__shadow"></div>
                 </div>
@@ -17,7 +20,10 @@
             </div>
             <div class="tours__tour" onclick="redirect('meanwhile')" >
                 <div class="tours__tour__img">
-                    <button class="tours_tour__img__button" >RESERVAR AHORA</button>
+                    <div class="tours__buttons">
+                        <button class="tours_tour__img__button" >AGENDA UN TOUR</button>
+                        <button class="tours_tour__img__button" >VER MÁS</button>
+                    </div>
                     <img src="img/tours/citytour.jpg" alt="Tour image">
                     <div class="tours__tour__img__shadow"></div>
                 </div>
@@ -28,8 +34,10 @@
             </div>
             <div class="tours__tour" onclick="redirect('meanwhile')" >
                 <div class="tours__tour__img">
-                    <button class="tours_tour__img__button" >RESERVAR AHORA</button>
-                    <img src="img/tours/extremetour.jpg" alt="Tour image">
+                    <div class="tours__buttons">
+                        <button class="tours_tour__img__button" >AGENDA UN TOUR</button>
+                        <button class="tours_tour__img__button" >VER MÁS</button>
+                    </div>                    <img src="img/tours/extremetour.jpg" alt="Tour image">
                     <div class="tours__tour__img__shadow"></div>
                 </div>
                 <div class="tours__tour__desc">
