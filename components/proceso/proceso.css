@@ -21,7 +21,8 @@
     width: 70%;
 }
     .proceso__info p{
-        text-align: center;
+        width: 100%;
+        text-align: justify;
         margin: 0;
         line-height: 1.5em;
         font-size: 110%;
