@@ -23,6 +23,6 @@
     ?>
     <!--Adding some javascript for components here-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="index.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
