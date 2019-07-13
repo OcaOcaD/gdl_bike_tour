@@ -1,0 +1,129 @@
+.details{
+    position: relative;
+    height: auto;
+    padding-top: calc( 110px + 1em );
+    min-height: calc( 100vh - 100px );
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+.details_bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../../img/basic/bike_bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /*filter: grayscale(100%);*/
+    opacity: 0.8;
+}
+.details_container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background: transparent;
+    padding-top: calc( 100px + 1em );
+}
+ 
+    .back__button{
+        height: 20px;
+        margin-left: 4em;
+        cursor: pointer;
+        font-weight: 600;
+        background-color: transparent;
+        color: #a42035;
+        border: none;
+    }
+    .back__button:hover{
+        color: white;
+    }
+    .tourD__project{
+        height: 65%;
+        width: 100%;
+        display: flex;
+        padding: 1em;
+    }
+        .tourD__media{
+            order:1;
+            display: flex;
+            flex-direction: column; 
+            width: 50%;
+            max-height: 100%;
+        }
+            .tourD__actualImage{
+                order:1;
+                height: 70%;
+                width: 100%;
+            }
+            .tourD__projectImages{
+                order:2;
+                display: flex;
+                justify-content: space-between;
+                height: 30%;
+                width: 100%;
+                margin-top: 0.5em;
+            }
+                .small__img{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 0.5em;
+                    margin-right: 0.5em;
+                    height: 100%;
+                    filter: grayscale(100%);
+                    transition: filter 0.3s ease-out, transform 0.3s ease-out;
+                }
+                .small__img__img{
+                    cursor: pointer;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+                .small__img:hover{
+                    transform: scale(1.1);
+                    filter: none;
+                }
+        .tourD__info{
+            order:2;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: left;
+            width: 40%;
+            margin-left: 2em;
+            margin-right: 2em;
+        }
+            .tourD__title{
+                color: #a42035;
+            }
+            .tourD__separator__container{
+                width: 50%;
+                height: 3px;
+                margin: 0;
+                padding: 0;
+            }
+            .tourD__separator{
+                height: 100%;
+                text-align: left;
+                border: none;
+                color: #a42035;
+                background-color: #a42035;
+            }
+            .tourD__description{
+                color: white;
+                text-shadow: 1px 1px black;
+            }
+    .tourD__others{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 35%;
+        margin: 0;
+        padding: 0;
+    }
+        .tourD__others__title{
+            color: #a42035;
+        }

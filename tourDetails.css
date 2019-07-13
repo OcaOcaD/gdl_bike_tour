@@ -1,0 +1,21 @@
+.showTourFull{
+    position: relative;
+    padding-top: calc( 110px + 1em );
+    min-height: calc( 120vh - 100px );
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    padding-bottom: calc( 40px + 2em );
+}
+.showTourFull__shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(img/basic/bike_bg2.jpg);
+    background-size: 100vw auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /*filter: grayscale(100%);
+    opacity: 0.8;
+    */
+}

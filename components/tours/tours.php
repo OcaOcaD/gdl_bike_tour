@@ -1,4 +1,4 @@
-<div class="tours">
+<div id="tours" class="tours">
     <h1 class="tours__title">
         ELIGE UNO DE NUESTROS TOURS
     </h1>
