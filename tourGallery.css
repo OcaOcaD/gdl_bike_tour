@@ -1,11 +1,21 @@
 html, body{
+    position: relative;
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
     box-sizing: 0;
-    background-color: white;
+}
+.tourGallery_bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/basic/bike_bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
 label, p, h1, h2, h3, ul, li, legend, small, strong{

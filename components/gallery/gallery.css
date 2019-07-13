@@ -15,7 +15,7 @@
         .gallery__title h1{
             color: #A42035;
         }
-    .gallery_gallery{
+    .gallery__gallery{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -46,12 +46,16 @@
             .tours__tour__desc h2{
                 margin: 0;
                 padding-bottom: 0.5em;
+                color: #A42035;
+                text-shadow: 2px 2px #1d1d1b;
                 text-align: center;
                 font-weight: 800;
             }
             .tours__tour__desc h3{
                 text-align: center;
                 font-weight: 400;
+                color: white;
+                text-shadow: 2px 2px #1d1d1b;
             }
             .tours__tour__img{
                 position: relative;

@@ -14,6 +14,9 @@
     <title>GDL BIKE TOUR</title>
 </head>
 <body>
+    <div class="tourGallery_bg">
+
+    </div>
     <?php
     include("components/navbar/navbar.php");
 
