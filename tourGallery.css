@@ -12,6 +12,7 @@ html, body{
     height: 100%;
     width: 100%;
     background: url(img/basic/bike_bg2.jpg);
+    background: white;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;

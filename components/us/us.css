@@ -6,7 +6,7 @@
     height: 85vh;
     background-color: #1D1D1B;
 }
-.us__continer{
+.us__container{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -33,6 +33,7 @@
     background: url("../../img/basic/cyclists.jpg");
     background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat; 
     background-size: 100vw auto;
     z-index: 10;
 }
@@ -91,3 +92,24 @@
         background-color: white;
         color: #1D1D1B;
     }
+
+
+@media ( max-width: 768px ){
+    /*Small screens-only*/
+    .us{
+        height: auto;
+    }
+    .us__container{
+        height: auto;
+    }
+    .us__background{
+        width: 100%;
+        min-height: 180px;
+        height: auto;
+        background-attachment: initial;
+        background-position: center;
+        background-size: 100vw auto;
+        background-repeat: no-repeat; 
+        z-index: 10;
+    }
+}

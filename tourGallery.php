@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="components/navbar/navbar.css">
     <link rel="stylesheet" href="components/selectLanguage/selectLanguage.css">
     <link rel="stylesheet" href="components/gallery/gallery.css">
+    <link rel="stylesheet" href="components/carousel/carousel.css">
 
     <link rel="stylesheet" href="components/footer/footer.css">
     <title>GDL BIKE TOUR</title>

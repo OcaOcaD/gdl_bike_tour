@@ -11,7 +11,7 @@
 }
 .proceso__title{
     color: #a42035;
-    
+    text-align: center;
 }
 .proceso__info{
     display: flex;
@@ -32,3 +32,8 @@
         color: #a42035;
         text-decoration: none;
     }
+
+@media ( max-width: 768px ){
+    /*Small screens-only*/
+
+}

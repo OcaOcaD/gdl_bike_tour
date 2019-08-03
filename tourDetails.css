@@ -12,6 +12,7 @@
     width: 100%;
     height: 100%;
     background: url(img/basic/bike_bg2.jpg);
+    background: white;
     background-size: 100vw auto;
     background-attachment: fixed;
     background-repeat: no-repeat;

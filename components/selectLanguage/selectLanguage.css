@@ -36,6 +36,9 @@
         .card:hover{
             background-color:white;
         }
+        .card:hover .card__description{
+            color: #a42035;
+        }
         .card__flag{
             height: 50px;
             width: 50px;
@@ -58,7 +61,3 @@
                 font-size: 90%;
                 text-shadow: black 2px 2px;
             }
-        .card__description:hover{
-            color: #a42035;
-
-        }

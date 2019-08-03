@@ -1,3 +1,6 @@
+<div class="footer phone_footer">
+    <label class="footer__phones">Tel: 33 3616 5029 <i class="fab fa-whatsapp"></i></label>
+</div>
 <div class="footer">
     <div class="footer__text">
         <label class="footer__address">Direccion - Gabriel Castaños 4, Colonia Arcos Vallarta, Guadalajara, Jalisco. México</label>
@@ -5,8 +8,29 @@
         <label class="footer__phones">Teléfono - 33 3616 5029</label>
     </div>
     <div class="footer__sn">
-        <div class="footer__sn-app"><i class="fab fa-instagram fa-2x"></i></div>
-        <div class="footer__sn-app"><i class="fab fa-facebook fa-2x"></i></div>
-        <div class="footer__sn-app"><i class="fab fa-whatsapp fa-2x"></i></div>
+        <div class="footer__sn-app"><i onclick="handleLink(event, 'instagram' )" class="fab fa-instagram fa-2x"></i></div>
+        <div class="footer__sn-app"><i onclick="handleLink(event, 'facebook' )" class="fab fa-facebook fa-2x"></i></div>
+        <div class="footer__sn-app"><i onclick="handleLink(event, 'map' )" class="fas fa-map-marked-alt fa-2x"></i></div>
     </div>
 </div>
+<script>
+    handleLink = (e, ref) => {
+        let link;
+        switch ( ref ){
+            case "instagram":{
+                link = "https://www.instagram.com/gdlbiketour/?hl=es-la";
+                break;
+            }
+            case "facebook":{
+                link = "https://web.facebook.com/gdlbike.tour/posts/?ref=page_internal&_rdc=1&_rdr";
+                break;
+            }
+            case "map":{
+                link = "https://goo.gl/maps/qNn5GZnjhhViLAuh9";
+                break;
+            }
+        }
+        //Go to the link
+        ( event.metaKey || event.ctrlKey ) ? window.open(link, "__blank") : window.location = link;
+    }
+</script>

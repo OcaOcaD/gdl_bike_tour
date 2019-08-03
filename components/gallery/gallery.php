@@ -23,37 +23,15 @@
         }
     }else{
     }
+    mysqli_close($connection);
 ?>
 <div class="gallery">
     <div class="gallery__title">
-        <h1>Únete a alguno de nuestros tours</h1>
+        <h1>ÚNETE A ALGUNO DE NUESTROS TOURS</h1>
     </div>
     <div class="gallery__gallery">
-        <?php
-        $k = 0;
-        while( isset($tl[$k]) && $tl[$k] != null ){
-            ?>
-            <div class="gallery__tour__container">
-                <?php
-                for ( $j = 0; $j < 5 && ( isset($tl[$k]) && $tl[$k] != null ) ; $j++ ){
-                ?>
-                    <div id="<?php echo $k;?>" class="tours__tour" >
-                        <div class="tours__tour__img">
-                            <div class="tours__buttons">
-                                <button class="tours_tour__img__button" >AGENDA UN TOUR</button>
-                                <button onclick="" class="tours_tour__img__button" name="<php echo 'the id'?>" >VER MÁS</button>
-                            </div> 
-                            <img src="img/tours/<?php echo $tl[$k]->get_cover()?>.jpg" alt="Tour image">
-                            <div class="tours__tour__img__shadow"></div>
-                        </div>
-                        <div class="tours__tour__desc">
-                            <h2><?php echo strtoupper($tl[$k]->get_name())?></h2>
-                            <h3><?php echo strtoupper($tl[$k]->get_schedule())?></h3>
-                        </div>
-                    </div>
-                    <?php $k++;
-                } ?>
-            </div>
-        <?php } ?>
+        <?php 
+            include("components/carousel/carousel.php");
+        ?>
     </div>
 </div>

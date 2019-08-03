@@ -1,11 +1,12 @@
 .details{
     position: relative;
     height: auto;
-    padding-top: calc( 110px + 1em );
     min-height: calc( 100vh - 100px );
     width: 100vw;
     margin: 0;
     padding: 0;
+    margin-bottom: 40px;
+    padding-bottom: 2em;
 }
 .details_bg{
     position: absolute;
@@ -96,6 +97,7 @@
         }
             .tourD__title{
                 color: #a42035;
+                text-shadow: 2px 2px grey;
             }
             .tourD__separator__container{
                 width: 50%;
@@ -108,11 +110,13 @@
                 text-align: left;
                 border: none;
                 color: #a42035;
+                text-shadow: 2px 2px #1d1d1b;
                 background-color: #a42035;
             }
             .tourD__description{
                 color: white;
-                text-shadow: 1px 1px black;
+                color: black;
+                /* text-shadow: 1px 1px black; */
             }
     .tourD__others{
         display: flex;
@@ -126,4 +130,5 @@
     }
         .tourD__others__title{
             color: #a42035;
+            text-shadow: 2px 2px grey;
         }

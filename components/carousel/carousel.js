@@ -1,8 +1,8 @@
 !(function(d){
     // All code will go in here. We've renamed 'document' to 'd'.
-    var itemClassName = "carousel__photo";
-    items = d.getElementsByClassName(itemClassName),
-    totalItems = items.length,
+    var itemClassName = "carousel__item";
+    var items = d.getElementsByClassName(itemClassName);
+    totalItems = items.length;
     slide = 0,
     moving = true;
     initCarousel();
@@ -10,14 +10,13 @@
 function setInitialClasses() {
     // Targets the previous, current, and next items
     // This assumes there are at least three items.
-    console.log("setting the classes");
+    console.log(totalItems);
     items[totalItems - 1].classList.add("prev");
     items[0].classList.add("active");
     items[1].classList.add("next");
 }
 // Set event listeners
 function setEventListeners() {
-    console.log("setting the events");
     var next = d.getElementsByClassName('carousel__button--next')[0],
         prev = d.getElementsByClassName('carousel__button--prev')[0];
     next.addEventListener('click', moveNext);
@@ -26,9 +25,7 @@ function setEventListeners() {
 // Next navigation handler
 function moveNext() {
     // Check if moving
-    console.log("next?");
     if (!moving) {
-        console.log("Sliding from "+ slide + "to...");
         // If it's the last slide, reset to 0, else +1
         if (slide === (totalItems - 1)) {
         slide = 0;
@@ -36,7 +33,6 @@ function moveNext() {
         slide++;
         }
         // Move carousel to updated slide
-        console.log(slide);
         moveCarouselTo(slide);
     }
 }
@@ -55,7 +51,6 @@ function movePrev() {
         moveCarouselTo(slide);
     }
 }
-
 function disableInteraction() {
     // Set 'moving' to true for the same duration as our transition.
     // (0.5s = 500ms)
@@ -95,7 +90,7 @@ function moveCarouselTo(slide) {
           newNext = 0;
           oldNext = 1;
         }
-        console.log(
+        /*console.log(
             "oldPrev:"+ oldPrevious 
         );
         console.log(
@@ -106,7 +101,7 @@ function moveCarouselTo(slide) {
         );
         console.log(
             "NuNext:"+ newNext 
-        );
+        );*/
         // Now we've worked out where we are and where we're going, 
         // by adding/removing classes we'll trigger the transitions.
         // Reset old next/prev elements to default classes
@@ -119,10 +114,13 @@ function moveCarouselTo(slide) {
       }
     }
   }
-
+function setTimeSlider(){
+  setInterval(moveNext, 5000);
+}
   function initCarousel() {
     setInitialClasses();
     setEventListeners();
+    setTimeSlider();
     // Set moving to false so that the carousel becomes interactive
     moving = false;
   }

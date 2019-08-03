@@ -1,9 +1,10 @@
 <?php 
-if ( isset($_POST['tour']) ){
-    $t = $_POST['tour'];
+if ( isset($_GET['tour']) ){
+    $t = $_GET['tour'];
 }else{
     //Mientras
     $t = 97;
+}
     include("utilities/db.php");
     include("utilities/tour.php");
     //Download teh project information
@@ -43,7 +44,7 @@ if ( isset($_POST['tour']) ){
                             $tInfo->add_image( $imgname );
                         }
                     }else{
-                        echo "NO IMAGES FOR THE ".$tInfo->get_name()." TOUR<br>";
+                        // echo "NO IMAGES FOR THE ".$tInfo->get_name()." TOUR<br>";
                     }
                 }
                 //Ahora a consultar las imagenes y extras del tour
@@ -58,21 +59,20 @@ if ( isset($_POST['tour']) ){
                             $tInfo->add_tourinclude( $imgname );
                         }
                     }else{
-                        echo "NO tourincludeS FOR THE ".$tInfo->get_name()." TOUR<br>";
+                        // echo "NO tourincludeS FOR THE ".$tInfo->get_name()." TOUR<br>";
                     }
                 }else{
-                    echo "NO TOURINCLUDE QUERY<br>";
+                    // echo "NO TOURINCLUDE QUERY<br>";
                 }
             }
         }else{
-            echo "EMPTY QUERY<br>";
+            // echo "EMPTY QUERY<br>";
         }
 
     }else{
-        echo "PROBLEM WITH THE QUERY<br>";
+        // echo "PROBLEM WITH THE QUERY<br>";
         echo $tour_query."<br>";
     }
-}
 ?>
 
 <div class="details">
@@ -96,7 +96,7 @@ if ( isset($_POST['tour']) ){
         </div>
         <div class="tourD__others">
             <!--CArousel con sugerencias-->
-            <h1 class="tourD__others__title">MÁS <?php echo strtoupper("LA CATEGORIA") ?></h1>
+            <h1 class="tourD__others__title">OTROS TOURS</h1>
             <?php
                 include("components/otherProjects/otherProjects.php");
             ?>

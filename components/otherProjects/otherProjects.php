@@ -25,9 +25,9 @@
         ?>
         <div class="related" style="width: <?php echo $w ?>%;">
             <div class="related__img">
-                <img class="related__img__img" src="img/tours/<?php echo $tl[$i]->get_cover()?>.jpg" alt="Tour cover">
+                <img class="related__img__img" src="img/tours/<?php echo $tl[$i]->get_cover()?>" alt="Tour cover">
             </div>
-            <button class="related__buttton">VER DETALLES</button>
+            <button class="related__buttton"><?php echo $tl[$i]->get_name() ?></button>
             <div class="related__shadow"></div>
         </div>
         <?php 
