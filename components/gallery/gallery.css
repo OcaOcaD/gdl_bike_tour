@@ -1,20 +1,27 @@
 .gallery{
-    width: 100%;
-    /*height: 65vh;*/
+    width: 100vw;
+    overflow: hidden;
+    height: calc(100vh - 140px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
     margin-top: 100px;
-    margin-bottom: 4em;
-    padding-top: 1em;
+    padding-top: 2em;
 }
     .gallery__title{
         margin: 0; 
         padding: 0;
+        padding-left: 1em;
+        padding-right: 1em;
+        max-height: 20%;
     }
         .gallery__title h1{
+            margin: 0;
+            padding: 0;
             color: #A42035;
+            text-align: center;
         }
     .gallery__gallery{
         display: flex;
@@ -22,7 +29,7 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: auto;
+        height: 80%;
     }
         .gallery__tour__container{
             display: flex;
@@ -33,93 +40,13 @@
             width: 100%;
             margin-bottom: 2em;
         }
-        .tours__tour{
-            height: 100%;
-            width: 20%;
-            margin-left: 0.5em;
-            margin-right: 0.5em;
-        }
-            .tours__tour__desc{
-                padding-top: 0.5em;
-                width: 100%;
-                height: 30%;
-            }
-            .tours__tour__desc h2{
-                margin: 0;
-                padding-bottom: 0.5em;
-                color: #A42035;
-                text-shadow: 2px 2px #1d1d1b;
-                text-align: center;
-                font-weight: 800;
-            }
-            .tours__tour__desc h3{
-                text-align: center;
-                font-weight: 400;
-                color: white;
-                text-shadow: 2px 2px #1d1d1b;
-            }
-            .tours__tour__img{
-                position: relative;
-                height: 70%;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                overflow: hidden;
-            }   
-                .tours__tour__img img{
-                    max-width: 100%;
-                    max-height: 100%;
-                    z-index: 10;
-                    transition: transform 0.3s ease-out;
-                }
-                .tours__tour__img__shadow{
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    background-color: #1D1D1B;
-                    opacity: 0;
-                    transition: opacity 0.4s ease-out;  
-                    z-index: 100;
-                }
-                .tours__buttons{
-                    position: absolute;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    height: 100%;
-                    width: 100%;
-                }
-                .tours_tour__img__button{
-                    position: relative;
-                    margin-top: 0.5em;
-                    margin-bottom: 0.5em;
-                    border: 2px solid white;
-                    height: 50px;
-                    width: 60%;
-                    background-color: transparent;
-                    font-size: 100%;
-                    font-weight: 500;
-                    color: white;
-                    cursor: pointer;
-                    outline: none;
-                    z-index: 110;
-                    opacity: 0;
-                    transition: color .3s ease-out, background-color .3s ease-out; 
-                }
-                .tours_tour__img__button:hover{
-                    color: black;
-                    background-color: white;
-                }
 
 
-        .tours__tour:hover .tours__tour__img__shadow{
-            opacity: 0.8;
-        }
-        .tours__tour:hover .tours_tour__img__button{
-            opacity: 0.8;
-        }
-        .tours__tour:hover .tours__tour__img img{
-            transform: scale(1.1);
-        }
+
+@media ( max-width: 768px ){
+    /*Small screens-only*/
+    .gallery{
+        height: calc( 100vh - 170px );
+        margin-bottom: 70px;
+    }
+}

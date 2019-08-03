@@ -79,7 +79,7 @@
                 .carousel__info button{
                     box-sizing: border-box;
                     width: 240px;
-                    max-width: 80%;
+                    max-width: 60%;
                     height: 40px;
                     margin-bottom: 3em;
                     background-color: transparent;
@@ -176,17 +176,15 @@
   width: 3rem;
   height: 3rem;
   background-color: #1d1d1b;
-  transform: translateY(-50%);
   border-radius: 50%;
   cursor: pointer; 
   z-index: 1001; /* Sit on top of everything */
 }
 .carousel__button--prev {
-  left:0;
+  left:4em;
 }
 .carousel__button--next {
-  right:0;
-  transform: translateX(-10px);
+  right:4em;
 }
     /*Arrows*/
     .carousel__button--prev::after,

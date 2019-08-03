@@ -1,0 +1,48 @@
+@media ( max-width: 768px ){
+    /*Small screens-only*/
+    .carousel__item{
+        width: 20%;
+        height: 30%;
+    }
+    .carousel__item.initial,
+    .carousel__item.active {
+            position: relative;
+            width: 70%;
+            height: 80%;
+            opacity: 1;
+            z-index: 900;
+    }
+    .carousel__ptitle h1{
+        font-size: 50%;
+        color: black;
+        text-shadow: 2px 2px grey;
+        text-align: center;
+        transition: font-size 0.3s ease-out, transform 0.3s ease-out, color 0.3s ease-out;
+    }
+    .carousel__item:hover .tour__name{
+        color: white;
+        transform: scale(1.1) translateY(-1em);
+    }
+    .carousel__item.initial,
+    .carousel__item.active .tour__name{
+        font-size: 100%;
+    }
+    .carousel__item.prev {
+        transform: translate(-165%,-50%); /*Move 'prev' item to the left*/
+        /* transform: translateX(-165%); Move 'prev' item to the left */
+        opacity: 0.6;
+    }
+    .carousel__item.next {
+        transform: translate(165%,-50%); /*Move 'next' item to the right*/
+        /* transform: translateX(165%); Move 'next' item to the right */
+        opacity: 0.6;
+    }
+    .carousel__button--prev {
+        left:0.25em !important;
+        transform: translateY(-50%) !important;
+      }
+      .carousel__button--next {
+        right:0.25em !important;
+        transform: translateY(-50%) !important;
+      }
+}

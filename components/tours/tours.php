@@ -4,7 +4,7 @@
     </h1>
     <div class="tours__container">
         <div class="tours__tours">
-            <div class="tours__tour" onclick="redirect('meanwhile')" >
+            <div class="tours__tour">
                 <div class="tours__tour__img">
                     <div class="tours__buttons">
                         <button class="tours_tour__img__button" >AGENDA UN TOUR</button>
@@ -18,7 +18,7 @@
                     <h3>JUEVES A DOMINGO</h3>
                 </div>
             </div>
-            <div class="tours__tour" onclick="redirect('meanwhile')" >
+            <div class="tours__tour">
                 <div class="tours__tour__img">
                     <div class="tours__buttons">
                         <button class="tours_tour__img__button" >AGENDA UN TOUR</button>
@@ -32,7 +32,7 @@
                     <h3>TODOS LOS DÍAS</h3>
                 </div>
             </div>
-            <div class="tours__tour" onclick="redirect('meanwhile')" >
+            <div class="tours__tour">
                 <div class="tours__tour__img">
                     <div class="tours__buttons">
                         <button class="tours_tour__img__button" >AGENDA UN TOUR</button>

@@ -6,15 +6,19 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: 4em;
-    margin-bottom: 4em;
 }
 .tours__title{
     order: 1;
     padding-top: 0px;
+    margin:0;
+    padding: 0;
     color: #a42035;
-    height: 10%;
+    height: 15%;
 }
+    .tours__title h1{
+        margin:0;
+        padding: 0;
+    }
 .tours__todos{
     order: 3;
     background-color: white;
@@ -22,8 +26,10 @@
     color: #a42035;
     width: 240px;
     height: 40px;
-    margin-top: 2em;
+    margin-top: 0.25em;
+    margin-bottom: 1.75em;
     line-height: 30px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +41,7 @@
     border: 1px solid #a42035;
     background-color: #a42035;
     color: white;
+    height: 40px;
 }
 .tours__container{
     order: 2;
@@ -42,7 +49,7 @@
     justify-content: space-around;
     align-items: center;
     width: 70%;
-    height: 90%;
+    height: calc( 85% - 50px );
 }
     .tours__tours{
         width: 100%;
@@ -53,26 +60,28 @@
     }
         .tours__tour{
             height: 100%;
-            width: 20%;
+            width: 25%;
         }
             .tours__tour__desc{
                 padding-top: 0.5em;
                 width: 100%;
-                height: 20%;
+                height: 30%;
             }
             .tours__tour__desc h2{
                 margin: 0;
                 padding-bottom: 0.5em;
                 text-align: center;
                 font-weight: 800;
+                font-size: 110%;
             }
             .tours__tour__desc h3{
                 text-align: center;
                 font-weight: 400;
+                font-size: 100%;
             }
             .tours__tour__img{
                 position: relative;
-                height: 80%;
+                height: 70%;
                 width: 100%;
                 display: flex;
                 justify-content: center;
@@ -111,7 +120,7 @@
                     height: 50px;
                     width: 60%;
                     background-color: transparent;
-                    font-size: 100%;
+                    font-size: 60%;
                     font-weight: 500;
                     color: white;
                     cursor: pointer;

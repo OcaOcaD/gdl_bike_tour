@@ -1,8 +1,8 @@
-<div id="contact" class="contact">
+<div class="contact">
     <div class="contact__background">
         <img src="img/basic/cyclists.jpg" class="contact__bg__img" alt="">
     </div>
-    <div class="contact__container">
+    <div id="contact" class="contact__container">
         <div class="contact__title">
             <h1>Estamos para servirte</h1>
         </div>

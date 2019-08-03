@@ -1,32 +1,33 @@
 !(function(d){
-function changeNavBG(type){
-    nb = d.getElementsByClassName("shadow");
-    switch( type ){
-        case 0:{
-            $(nb).css({
-                transition : 'background\-image 3s ease-out',
-                "background-image" : "linear-gradient(to top, transparent, #1D1D1B,#1D1D1B,#1D1D1B)",
-                "opacity" : "0.7",
-                "height" : "115px"
-            });
-            break;
-        }
-        case 1:{
-            $(nb).css({
-                transition : 'background\-image 3s ease-out',
-                "background-image" : "linear-gradient(to top, #1D1D1B ,#1D1D1B)",
-                "opacity" : "1",
-                "height" : "100px"
-            });
-            break;
+    renderBackdropAndSideDrawer = (state) => {
+        if (state == true){
+            //Display the side drawer
+            $("#sideDrawer").addClass("open")
+            $("#backdrop").show()
+        }else{
+            //Hide the backdrop and sidedrawer
+            $("#sideDrawer").removeClass("open")
+            $("#backdrop").hide()
         }
     }
-}
-$(document).scroll(function() { 
-    if( $(window).scrollTop() > 100  ) {   
-      changeNavBG(1);
-    }else{
-        changeNavBG(0);
+    let sideDrawerOpen = false
+    console.log( "sidedrawer is: "+sideDrawerOpen );
+    renderBackdropAndSideDrawer( sideDrawerOpen );
+    backdropClickHandler = () => {
+        console.log("bd handler triggered");
+        sideDrawerOpen = false;
+        renderBackdropAndSideDrawer( sideDrawerOpen );
+    };
+    drawerToggleClickHandler = () => {
+        console.log("drawerToggleClickHandler triggered");
+        console.log("sd: "+ sideDrawerOpen + "gonna change to: "+!sideDrawerOpen);
+        sideDrawerOpen = !sideDrawerOpen
+        renderBackdropAndSideDrawer( sideDrawerOpen );
+    };
+    handleSideLink = ( destino ) => {
+        goToByScroll( destino );
+        sideDrawerOpen = !sideDrawerOpen
+        renderBackdropAndSideDrawer( sideDrawerOpen );
     }
-});
+
 }(document));

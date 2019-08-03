@@ -48,6 +48,6 @@ if( $pestaña == "index" ){
 <script>
 handleNavLink = (event, link) => {
     console.log(link);
-    ( event.metaKey || event.ctrlKey ) ? window.open(link, "__blank") : window.location = link;
+    ( event.metaKey || event.ctrlKey ) ? window.open(link) : window.location = link;
 }
 </script>
